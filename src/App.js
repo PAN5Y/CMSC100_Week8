@@ -2,6 +2,38 @@
 // import './App.css';
 
 import SubjectList from './SubjectList'
+import Counter from './Counter'
+import TempConverter from './TempConverter';
+
+// function App() {
+//   return (
+//     <div className="App">
+
+//       Hello, World!
+      
+//       <SubjectList data={CMSCSubjects} title={'Computer Science'} />
+//       <SubjectList data={CHEMSubjects} title={'Chemistry'} />
+
+//       {/* <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a>
+//       </header> */}
+
+//       <Counter val={10} />
+
+//     </div>
+//   );
+// }
 
 function App() {
   return (
@@ -9,23 +41,15 @@ function App() {
 
       Hello, World!
       
-      <SubjectList data={CMSCSubjects} title={'Computer Science'} />
-      <SubjectList data={CHEMSubjects} title={'Chemistry'} />
+      <SubjectList list={CMSCSubjects} />
+      <SubjectList list={CHEMSubjects} />
 
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      <Counter val={10} />
+      
+      <br/>
+
+      <TempConverter />
+
     </div>
   );
 }
